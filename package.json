@@ -19,7 +19,7 @@
         "@types/bun": "*",
         "@wxn0brp/vql-client": "^0.2.4",
         "tsc-alias": "*",
-        "typescript": "^5"
+        "typescript": "^6.0.0"
     },
     "peerDependencies": {
         "@wxn0brp/vql-client": ">=0.2.4"
