@@ -1,0 +1,6 @@
+{
+	cmd: "tsc --noEmit && bun test",
+	watch: [
+		"src"
+	]
+}
