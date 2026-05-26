@@ -19,19 +19,17 @@ Here's a basic example of how to build a `find` query:
 ```typescript
 import { VO } from "@wxn0brp/vql-orm";
 
-// Create a query builder instance for the "myShop" database
-const qb = VO("myShop");
-
 // Build a query
-const userQuery = qb
-    .from("users")
-    .select("name", "email", "age")
-    .where({
-        status: "active",
-        $gt: { age: 18 }
-    })
-    .limit(10)
-    .query(); // This generates the final VQL query object and resets the builder
+const userQuery = 
+  VO("myShop")
+  .from("users")
+  .select("name", "email", "age")
+  .where({
+    status: "active",
+    $gt: { age: 18 }
+  })
+  .limit(10)
+  .query(); // This generates the final VQL query object and resets the builder
 
 console.log(JSON.stringify(userQuery, null, 2));
 ```
