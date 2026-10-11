@@ -1,0 +1,40 @@
+{
+  "name": "@wxn0brp/vql-orm",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "VQL orm for VQL-client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxn0brP/VQL-orm.git"
+  },
+  "homepage": "https://github.com/wxn0brP/VQL-orm",
+  "author": "wxn0brP",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "*",
+    "@wxn0brp/biome": "*",
+    "@wxn0brp/vql-client": "^0.2.15",
+    "tsc-alias": "^1",
+    "typescript": "^7"
+  },
+  "peerDependencies": {
+    "@wxn0brp/vql-client": "^0.2.15"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
+    }
+  }
+}
