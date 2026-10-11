@@ -17,12 +17,13 @@
     },
     "devDependencies": {
         "@types/bun": "*",
-        "@wxn0brp/vql-client": "^0.2.13",
+        "@wxn0brp/biome": "*",
+        "@wxn0brp/vql-client": "^0.2.15",
         "tsc-alias": "^1",
-        "typescript": "^6"
+        "typescript": "^7"
     },
     "peerDependencies": {
-        "@wxn0brp/vql-client": "^0.2.13"
+        "@wxn0brp/vql-client": "^0.2.15"
     },
     "files": [
         "dist"
